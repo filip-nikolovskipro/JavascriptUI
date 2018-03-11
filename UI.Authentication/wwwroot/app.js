@@ -86,7 +86,7 @@ app.navigateToPage = function (key, url, fn) {
 
 app._isStandalone = function () {
 
-    if (sessionStorage.getItem("accessToken") != null)
+    if (sessionStorage.getItem("accessToken") !== null)
         return true;
 
     return false;
